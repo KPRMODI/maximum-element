@@ -12,8 +12,8 @@ public class Exercise19_05 {
     
     /**
      * Finds the maximum element in an array.
-     * 
-     * TODO: Complete this method.
+     * Name: Karan Modi
+     * Complete this method.
      * Hint: Use a bounded generic type <E extends Comparable<E>>.
      * Start with the first element as max, then compare with others.
      * Use compareTo() to compare elements.
@@ -22,15 +22,14 @@ public class Exercise19_05 {
      * @return the maximum element
      */
     public static <E extends Comparable<E>> E max(E[] list) {
-        // TODO: Implement this method
+        // Implement this method
         E max = list[0];
-        for (int i = 0; i < list.length()-1; i++){
+        for (int i = 1; i < list.length; i++){
             if (list[i].compareTo(max)>0){
                 max = list[i];
             }
         }
-        System.out.println("TODO: max() not implemented yet");
-        return null;
+        return max;
     }
 
     public static void main(String[] args) {
