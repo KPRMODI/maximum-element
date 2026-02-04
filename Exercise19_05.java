@@ -25,7 +25,7 @@ public class Exercise19_05 {
         // Implement this method
         E max = list[0];
         for (int i = 1; i < list.length; i++){
-            if (list[i].compareTo(max)>0){
+            if (list[i].compareTo(max)>0){ // Because the max integer starts at the first index, we can start at the second index at i = 1
                 max = list[i];
             }
         }
